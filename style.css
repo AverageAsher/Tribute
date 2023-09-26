@@ -1,0 +1,52 @@
+.Markiplier {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+  body {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BYzM1MDc4MDMtYmZmNC00NWZmLWI4M2UtZjk1OGI4YjUyY2I1XkEyXkFqcGdeQXVyNzgxNDk0NTI@._V1_.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+  }
+
+  ul {
+    color: white;
+    background-color: rgba(77, 2, 7, 0.7);
+  }
+  h1 {
+    color: white;
+    background-color: rgba(46, 45, 45, 0.7);
+    font-family: 'Montserrat', sans-serif;
+    padding: o;
+  }
+
+  h2 {
+    color: white;
+    background-color: rgba(46, 45, 45, 0.7);
+    padding: o;
+  }
+
+  p{
+    background-color: rgba(77, 2, 7, 0.7);
+    padding: o;
+
+  }
+
+  .custombackground {
+    color: white;
+    background-color: rgba(77, 2, 7, 0.7);
+    padding: o;
+
+  }
+
+  a {
+    color: blue;
+  }
+
+  .playbutton {
+    padding: 20px;
+  }

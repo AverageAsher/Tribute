@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mark Edward Fischbach</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>		
+<body>
+	<center><h1>Mark Fischbach</h1></center>
+	<div>
+		<center><img src="https://m.media-amazon.com/images/M/MV5BOTBhZDA5NjYtOTZhNy00OTE5LTljZjktMDM0NTRhZjU0MDE1XkEyXkFqcGdeQXVyMTE0MzQwMjgz._V1_QL75_UX500_CR0,8,500,281_.jpg" class="Markiplier"> </center>
+	</div>
+	<div class="custombackground" >
+    <p>
+      <center>
+        <span>Honest</span>
+        <span>Generous</span>
+        <span>Funny</span>
+      </center>
+  	</p>
+	</div>
+	<div>
+	<center><h2>Summary</h2></center>
+	<p class= "custombackground">Mark Edward Fischbach, known online as Markiplier, is an American YouTuber and film director. He mainly uploads Let's Plays and is known for his videos of indie horror games.</p>
+	</div>
+	<div>
+	<center><h2>Fun Facts</h2></center>
+		<ul>
+			<li>He studied at the University of Cincinnati before becoming a YouTube star</li>
+			<li>He joined MissesMae to teach Jimmy Kimmel about Let's Plays</li>
+			<li>He has a strong fear of mannequins and dolls</li>
+			<li>Rachael Ray once presented him with a Taco Trophy for making an awesome margarita</li>
+			<li>He took a hiatus after his friend Daniel passed away</li>
+			<li>He was born in Honolulu, Hawaii, not simply Oahu</li>
+			<li>An incident with a fan led him to stop using Snapchat</li>
+			<li>He once threw up naked on his bathroom floor after eating hot sauce</li>
+			<li>More than 2 million people have watched him stare at a banana</li>
+			<li>He is NOT a masochist</li>
+		</ul>
+		<center><p class="custombackground">"WAS THAT THE BITE OF '87!?"</p></center>
+		<center><button style="background-color: rgb(200, 0, 0);" onclick="document.location='bibliography.html'">Work Cited</button></center>
+	</div>
+	<div>
+		 <button id="playButton">Feedy Fazbeer</button>
+  <iframe id="videoPlayer" width="560" height="315" src="https://www.youtube.com/embed/FUaaGInT_R8" frameborder="0" allowfullscreen></iframe>
+
+	 <script>
+    var videoPlayer = document.getElementById('videoPlayer');
+    var playButton = document.getElementById('playButton');
+    var playerReady = false;
+
+    // Add an event listener for when the YouTube player is ready
+    videoPlayer.onload = function () {
+      playerReady = true;
+    };
+
+    // Function to play or pause the video
+    function toggleVideo() {
+      if (playerReady) {
+        if (videoPlayer.paused) {
+          videoPlayer.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+          playButton.textContent = 'Pause Video';
+        } else {
+          videoPlayer.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+          playButton.textContent = 'Play Video';
+        }
+      }
+    }
+
+    // Add a click event listener to the play button
+    playButton.addEventListener('click', toggleVideo);
+  </script>
+</div>
+</body>
+</html>
